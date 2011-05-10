@@ -1,6 +1,6 @@
 var generate = require('index').generate;
 
-test = function() {
+exports.test = function() {
   var api = {
     "feed/{feed}": ['GET']
   };

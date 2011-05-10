@@ -54,7 +54,7 @@ exports.generate = function(base, endpoints) {
             //TODO work with non JSON content types
             return response.body.toJSON();
           }
-          //TODO figure out how to sensibly include the error
+          //TODO figure out how to sensibly include the message in the Error
           throw new Error(response.body);
 				}
 			}();
