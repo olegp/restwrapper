@@ -1,22 +1,9 @@
-// The main code file of your application
+var generate = require('index').generate;
 
-// The setup of the basic Akshell library
-require('ak').setup();
-
-
-// The index page handler
-var IndexHandler = Handler.subclass(
-  {
-    get: function (request) {
-      return render(
-        'index.html',
-        {
-          header: 'Hello World!'
-        });
-    }
-  });
-
-
-// The URL -> handler mapping
-exports.root = new URLMap(
-  IndexHandler, 'index');
+test = function() {
+  var api = {
+    "feed/{feed}": ['GET']
+  };
+  var ff = generate("http://friendfeed-api.com/v2/", api);
+  return ff.getFeed("oleg");
+};
