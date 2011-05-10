@@ -1,6 +1,6 @@
 var HttpClient = require('httpclient').HttpClient;
 
-exports.generate = function(base, endpoints) {
+exports.generate = function(base, endpoints, suffix) {
   function camelCase(string) {
 		return string.charAt(0).toUpperCase() + string.substring(1);
 	}
@@ -38,6 +38,7 @@ exports.generate = function(base, endpoints) {
 							url.push('/');
 						}
 					}
+          if(suffix) url.push(suffix);
 					var headers = args.shift(), params = args.shift(), body = args.shift();
 					if(params) {
 						url.push("?");
