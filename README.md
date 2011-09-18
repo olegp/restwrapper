@@ -8,9 +8,14 @@ First install the package via npm:
 
     npm install restwrapper
     
-To use the package in your module:
+To use the package in your project:
 
     var generate = require('restwrapper').generate;
+    var api = {
+      "feed/{feed}": ["GET"]
+    };
+    var ff = generate("http://friendfeed-api.com/v2/", api);
+    console.log(ff.getFeed("oleg"));
 
 The following environments are supported:
 
