@@ -1,0 +1,23 @@
+{
+  "name": "restwrapper",
+  "keywords": ["api", "rest", "wrapper"],
+  "description": "A library for creating JavaScript proxy objects to JSON REST APIs",
+  "version": "0.0.1",
+  "author": "Oleg Podsechin <oleg@ionsquare.com>",
+  "directories" : {
+    "lib" : "."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/olegp/restwrapper.git"
+  },
+  "homepage": "http://github.com/olegp/restwrapper/",
+  "engines": {
+    "node": "*"
+  },
+  "dependencies": {},
+  "devDependencies": {
+  	"common-node": ">= 0.2.0"
+  },
+  "licenses": [ { "type": "MIT" } ]
+}
