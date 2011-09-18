@@ -1,0 +1,6 @@
+{
+	"base": "http://friendfeed-api.com/v2/".
+	"endpoints": {
+		"feed/{feed}": ["GET"]
+	}
+}
