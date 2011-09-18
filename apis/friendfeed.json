@@ -1,6 +1,25 @@
 {
-	"base": "http://friendfeed-api.com/v2/".
+	"base": "http://friendfeed-api.com/v2/",
 	"endpoints": {
-		"feed/{feed}": ["GET"]
+		"feed/{feed_id}": ["GET"],
+		"search": ["GET"],
+		"picture/{feed_id}": ["GET"],
+		"feedlist": ["GET"],
+		"feedinfo/{feed_id}": ["GET"],
+		"entry/{entry_id}": ["GET"],
+		"comment/{commend_id}": ["GET"],
+		
+		"entry": 	["POST"],
+		"comment": 	["POST"],
+		"url": ["GET"],
+		"short": ["GET"],
+		"theme": ["GET"],
+		"like": 	["POST"],
+		"subscribe": 	["POST"],
+		"unsubscribe": 	["POST"],
+		"feedinfo": ["POST"],
+		"hide": ["POST"],
+		"short": ["POST"],
+		"theme": ["POST"]
 	}
 }
