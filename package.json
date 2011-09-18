@@ -12,6 +12,7 @@
     "url": "git://github.com/olegp/restwrapper.git"
   },
   "homepage": "http://github.com/olegp/restwrapper/",
+  "main": "./lib/restwrapper.js",
   "engines": {
     "node": "*"
   },
