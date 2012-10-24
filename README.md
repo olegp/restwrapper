@@ -6,7 +6,7 @@ This package implements methods creating JavaScript proxy objects to JSON REST A
 
 First install the package via npm:
 
-    npm install restwrapper
+    npm install git+https://github.com/olegp/restwrapper.git
     
 To use the package in your project:
 
